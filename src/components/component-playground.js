@@ -38,7 +38,7 @@ const ComponentPlayground = ({
       <Playground
         codeText={(code || defaultCode).trim()}
         scope={{ React, Component, render, ...scope }}
-        noRender,
+        noRender
         theme={useDarkTheme ? "material" : "elegant"}
       />
     </ComponentPlaygroundContainer>
