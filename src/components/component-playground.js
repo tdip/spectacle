@@ -19,6 +19,7 @@ const ComponentPlayground = ({
   code,
   previewBackgroundColor,
   scope = {},
+  es6Console = false,
   noRender = false,
   theme = "dark"
 }) => {
@@ -38,6 +39,7 @@ const ComponentPlayground = ({
       <Playground
         codeText={(code || defaultCode).trim()}
         scope={{ React, Component, render, ...scope }}
+        es6Console
         noRender
         theme={useDarkTheme ? "material" : "elegant"}
       />
